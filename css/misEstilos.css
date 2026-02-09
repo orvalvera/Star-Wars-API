@@ -1,0 +1,129 @@
+body{
+    background: linear-gradient(135deg, #000 0%,#1a1a2e 100% );
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+
+
+}
+
+h3 {
+    color: #ffc107;
+    text-shadow: 0 0 10px rgba(255,192,7,0.5);
+    
+}
+
+.form-control {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid #ffc107;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.form-control:focus{
+    background-color: rgba(255,255,255,0.15);
+    border: 2px solid #ffc107;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255,193,7,0.5);
+}
+
+.form-control::placeholder{
+    color: rgba(255,255,255,0.5)
+}
+
+.label-control{
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.btn-warning{
+    font-weight: bold;
+    transition: all 0.5s ease;
+    border: none;
+    background: linear-gradient(45deg, #ffc107, #ffb300);
+    color: #000;
+}
+
+.btn-warning:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255,193,7,0.5);
+}
+
+.btn-warning:active{
+    transform: translateY(-1px);
+}
+
+.btn-warning i {
+    transition: transform 0.3s ease;
+}
+
+.btn-warning:hover i {
+    transform: rotate(90deg);
+}
+
+#resultado .card{
+    background: #000;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: 30px;
+}
+
+.card-title{
+    color: #ffc107;
+    text-shadow: 0 0 10px rgba(255,193,7,0.5);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card-body{
+    color: #fff;
+}
+
+.card-body p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.card-body strong {
+    color:#ffc107
+}
+
+#resultado img {
+    margin-bottom: 50px;
+}
+
+#resultado img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(255,193,7,0.5);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ffc107;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: greenyellow;
+}
+
+.container{
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
